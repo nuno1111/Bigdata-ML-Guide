@@ -7,7 +7,6 @@ import markmap from '../../tool/view.mindmap.js';
 import '../../tool/view.mindmap.css';
 
 // mindmap data 생성
-import fs from 'fs';
 import parse from '../../tool/parse.markdown';
 import transform from '../../tool/transform.headings';
 

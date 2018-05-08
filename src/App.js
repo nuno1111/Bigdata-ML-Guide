@@ -5,7 +5,8 @@ import jQuery from 'jquery/src/jquery';
 import {
   Navigator,
   Home,
-  ML
+  ML,
+  MD
 } from './components';
 
 var $ = jQuery;
@@ -34,6 +35,7 @@ class App extends Component {
               <Switch>
                 <Route exact path='/' component={Home}/>
                 <Route exact path='/ML' component={ML}/>
+                <Route path='/ML/MD/:md_url' component={MD}/>
               </Switch>
 
               <div className="container-fluid">

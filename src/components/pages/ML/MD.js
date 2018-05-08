@@ -1,14 +1,19 @@
 import React from 'react';
 import marked from 'marked';
 
-class Home extends React.Component {
+class MD extends React.Component {
+
+  constructor(req){
+    super();
+    this.req  = req ;
+  }
 
   componentDidMount(){
     this.init()
   }
 
   init(){
-    this.readMdFile("md/Home.md");
+    this.readMdFile("md/"+this.req.match.params.md_url+".md");
   }
 
   readMdFile = file => {
@@ -19,7 +24,7 @@ class Home extends React.Component {
 				if (rawFile.status === 200 || rawFile.status === 0) {
           this.refs.md.innerHTML = marked(rawFile.responseText);
 				}
-			} 
+			}
 		};
 		rawFile.send(null);
 	};
@@ -32,4 +37,4 @@ class Home extends React.Component {
   }
 }
 
-export default Home;
+export default MD;

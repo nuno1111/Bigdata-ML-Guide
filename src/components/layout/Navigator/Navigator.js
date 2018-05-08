@@ -11,7 +11,7 @@ class Navigator extends React.Component {
                   <Link to="/">DongHoon IT Blog </Link>
               </li>
               <li>
-                  <Link to="/ML">Machine Learning</Link>
+                  <Link to="/ML">Data Analysis</Link>
               </li>
           </ul>
       </div>

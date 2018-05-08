@@ -440,10 +440,13 @@ assign(Markmap.prototype, {
       if(d._children){
         d.children = d._children;
         d._children = null;
-        this.update(d);
+        this.update(d); 
       } else {
         //링크타고 이동
-        location.href="./";
+        var md_url = d.parent.parent.name + '_' + d.parent.name + '_' + d.name;
+        md_url = md_url.replace(/ /gi,"_") // 빈칸을 대시로 변경
+        // location.href = '#/ML/MD/?md='+link_url;
+        location.href = '#/ML/MD/'+md_url;
       }
     }
   }
