@@ -8,10 +8,10 @@ class Navigator extends React.Component {
       <div id="sidebar-wrapper">
           <ul className="sidebar-nav">
               <li className="sidebar-brand">
-                  <Link to="/">DongHoon IT Blog </Link>
+                  <Link to="/">Data Analysis </Link>
               </li>
               <li>
-                  <Link to="/ML">Data Analysis</Link>
+                  <Link to="/ML"> Data Exploration</Link>
               </li>
           </ul>
       </div>
