@@ -28,3 +28,9 @@
 
     # Chart
     boxplot(Sepal.Width~Species, data = iris)
+
+### Python
+    Ready
+
+### SparkML
+    Ready
