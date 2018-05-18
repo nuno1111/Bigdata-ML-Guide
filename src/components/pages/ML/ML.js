@@ -33,8 +33,8 @@ class ML extends React.Component {
   render() {
     return (
       <div className="container-fluid">
-        <h1>Machine Learning</h1>
-        <p>데이터 분석( 머신러닝 ) 이론과 소스코드 (R, Python, SparkML) 정리</p>
+        <h1>데이터 분석</h1>
+        <p>데이터 분석(머신러닝) 프로세스와 소스코드 (R, Python, SparkML) 정리</p>
         <svg id="mindmap" ></svg>
       </div>
     );
