@@ -9,6 +9,8 @@ import {
   MD
 } from './components';
 
+import ReactDisqusComments from 'react-disqus-comments';
+
 var $ = jQuery;
 
 class App extends Component {
@@ -38,9 +40,10 @@ class App extends Component {
                 <Route path='/ML/MD/:md_url' component={MD}/>
               </Switch>
 
-              <div className="container-fluid">
-                  <a href="#menu-toggle" className="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
-              </div>
+              <ReactDisqusComments
+                shortname="nuno1111-github-io"
+                url="https://nuno1111-github-io.disqus.com/embed.js"
+              />
           </div>
       </div>
 
